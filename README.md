@@ -1,2 +1,2 @@
-# git-e
+# git-ex
 git exercise
