@@ -35,7 +35,7 @@ namespace Git {
             }
             catch(ArgumentException)
             {
-                Console.WriteLine("Ошибка обновления!");
+                Console.WriteLine("РћС€РёР±РєР° РѕР±РЅРѕРІР»РµРЅРёСЏ!");
             }
         }
 
@@ -84,16 +84,16 @@ namespace Git {
             git1.Update(0, 5);
             git1.Update(1, 7);
             git1.Update(2, -8);
-            Console.WriteLine("Коммит №"+git1.Commit());
+            Console.WriteLine("РљРѕРјРјРёС‚ в„–"+git1.Commit());
             git1.Update(0, 4);
             git1.Update(1, 9);
             git1.Update(0, 356);
-            Console.WriteLine("Коммит №"+git1.Commit());
-            Console.WriteLine("Файл №0 по коммиту №0: "+git1.Checkout(0, 0));
-            Console.WriteLine("Файл №1 по коммиту №0: "+git1.Checkout(0, 1));
-            Console.WriteLine("Файл №0 по коммиту №1: " + git1.Checkout(1, 0));
-            Console.WriteLine("Файл №1 по коммиту №1: " + git1.Checkout(1, 1));
-            Console.WriteLine("Файл №2 по коммиту №1: " + git1.Checkout(1, 2));
+            Console.WriteLine("РљРѕРјРјРёС‚ в„–"+git1.Commit());
+            Console.WriteLine("Р¤Р°Р№Р» в„–0 РїРѕ РєРѕРјРјРёС‚Сѓ в„–0: "+git1.Checkout(0, 0));
+            Console.WriteLine("Р¤Р°Р№Р» в„–1 РїРѕ РєРѕРјРјРёС‚Сѓ в„–0: "+git1.Checkout(0, 1));
+            Console.WriteLine("Р¤Р°Р№Р» в„–0 РїРѕ РєРѕРјРјРёС‚Сѓ в„–1: " + git1.Checkout(1, 0));
+            Console.WriteLine("Р¤Р°Р№Р» в„–1 РїРѕ РєРѕРјРјРёС‚Сѓ в„–1: " + git1.Checkout(1, 1));
+            Console.WriteLine("Р¤Р°Р№Р» в„–2 РїРѕ РєРѕРјРјРёС‚Сѓ в„–1: " + git1.Checkout(1, 2));
             for (int i=0;i<git1.file.Count;i++)
                 Console.WriteLine(i+": "+ git1.file[i]);
             Console.ReadKey();
